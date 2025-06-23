@@ -1,7 +1,7 @@
 library version_banner;
 
 import 'package:flutter/widgets.dart';
-import 'package:package_info/package_info.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 /// Version Banner Widget
 ///
@@ -89,7 +89,8 @@ class VersionBanner extends StatelessWidget {
           color: Color.fromARGB(255, 255, 255, 255),
           fontWeight: FontWeight.bold),
       this.color = const Color.fromARGB(255, 255, 0, 0),
-      this.visible = true, this.packageExtensions});
+      this.visible = true,
+      this.packageExtensions});
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +99,7 @@ class VersionBanner extends StatelessWidget {
       /// the default text OR if we are going to check the visibility of the
       /// banner via the package extensions.
       /// If this is the case, we will need to access the package_info plugin
-      if (text == null || packageExtensions!= null) {
+      if (text == null || packageExtensions != null) {
         return FutureBuilder<PackageInfo>(
             future: PackageInfo.fromPlatform(),
             builder: (context, snapshot) {
@@ -131,8 +132,7 @@ class VersionBanner extends StatelessWidget {
 
               /// If we are not in a development package, return the original child
               return child;
-            }
-        );
+            });
       }
 
       /// If we don't use the default text or search the package names, then

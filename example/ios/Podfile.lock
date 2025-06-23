@@ -1,22 +1,23 @@
 PODS:
-  - Flutter (1.0.0)
+  - Flutter (3.13.0)
   - package_info (0.0.1):
     - Flutter
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios`)
   - package_info (from `.symlinks/plugins/package_info/ios`)
 
+SPEC REPOS:
+  trunk:
+    - Flutter
+
 EXTERNAL SOURCES:
-  Flutter:
-    :path: ".symlinks/flutter/ios"
   package_info:
     :path: ".symlinks/plugins/package_info/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  package_info: d7c98b64f60add4c2908b9d94d82a45d3c8827ad
+  Flutter: 8ff16720b007bae16abfe75ef9fe3ee45ead486a
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
 
-PODFILE CHECKSUM: e8988baac3a50f787b9d3ed7ca44957b442f92a7
+PODFILE CHECKSUM: 95b40e9d8e702b642a0731c111a9c7591ce6cbcd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.15.2
